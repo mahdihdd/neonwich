@@ -1,7 +1,14 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
+import { usePost } from "../context/PostProvider";
 
 export default function Dropmenu() {
   const [isOpen, setIsOpen] = useState(true);
+  const { descript, neonProduct, howOrder, questionBox, info } = usePost();
+
+  function scrollToSection(ref) {
+    ref.current.scrollIntoView({ behavior: "smooth" });
+  }
+
   function dropOpen() {
     setIsOpen(false);
   }
@@ -21,10 +28,30 @@ export default function Dropmenu() {
           onMouseEnter={dropOpen}
           className="absolute right-14 z-40 bg-[#e5e8ea] rounded p-2"
         >
-          <p className="text-right pb-1 pl-3">نمونه کار</p>
-          <p className="text-right pb-1 pl-3">نحوه سفارش</p>
-          <p className="text-right pb-1 pl-3">سوالات متداول</p>
-          <p className="text-right pb-1 pl-3">تماس باما</p>
+          <button
+            onClick={() => scrollToSection(neonProduct)}
+            className="text-right pb-1 pl-3"
+          >
+            نمونه کار
+          </button>
+          <button
+            onClick={() => scrollToSection(howOrder)}
+            className="text-right pb-1 pl-3"
+          >
+            نحوه سفارش
+          </button>
+          <button
+            onClick={() => scrollToSection(questionBox)}
+            className="text-right pb-1 pl-3"
+          >
+            سوالات متداول
+          </button>
+          <button
+            onClick={() => scrollToSection(info)}
+            className="text-right pb-1 pl-3"
+          >
+            تماس باما
+          </button>
         </div>
       )}
     </div>

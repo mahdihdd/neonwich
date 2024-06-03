@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import AccordionItem from "../components/AccordionItem";
+import { usePost } from "../context/PostProvider";
 const question = [
   {
     title: "مهدی حداد",
@@ -17,8 +18,9 @@ const question = [
 
 export default function Questions() {
   const [curOpen, setCurOpen] = useState(null);
+  const {questionBox} = usePost()
   return (
-    <div className="flex flex-col items-center h-[680px] border-2 rounded-xl m-3">
+    <div ref={questionBox} className="flex flex-col items-center h-[680px] border-2 rounded-xl m-3">
       <h1 className="mt-3">سولات متداول</h1>
       <div className="w-[700px] my-[100px] mx-auto flex flex-col gap-[24px]">
         {question.map((el, i) => (
