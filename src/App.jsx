@@ -4,6 +4,7 @@ import Structure from "./section/Structure";
 import NeonProduc from "./components/NeonProduct";
 import ChalniumProduct from "./components/ChelniumProduct";
 import LedProduct from "./components/LedProduct";
+import PageNotFound from "./pages/PageNotFound";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="ChalniumProduct" element={<ChalniumProduct />} />
           <Route path="LEDProduct" element={<LedProduct />} />
         </Route>
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
     </BrowserRouter>
   );

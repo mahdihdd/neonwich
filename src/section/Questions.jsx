@@ -1,0 +1,38 @@
+import React, { useState } from "react";
+import AccordionItem from "../components/AccordionItem";
+const question = [
+  {
+    title: "مهدی حداد",
+    text: "مهندسی کامپیوتر",
+  },
+  {
+    title: "پارسا ادیب نیا",
+    text: "مهندسی عمران",
+  },
+  {
+    title: "مهیار حداد",
+    text: "مدیریت",
+  },
+];
+
+export default function Questions() {
+  const [curOpen, setCurOpen] = useState(null);
+  return (
+    <div className="flex flex-col items-center h-[680px] border-2 rounded-xl m-3">
+      <h1 className="mt-3">سولات متداول</h1>
+      <div className="w-[700px] my-[100px] mx-auto flex flex-col gap-[24px]">
+        {question.map((el, i) => (
+          <AccordionItem
+            curOpen={curOpen}
+            onOpen={setCurOpen}
+            title={el.title}
+            num={i}
+            key={el.title}
+          >
+            {el.text}
+          </AccordionItem>
+        ))}
+      </div>
+    </div>
+  );
+}
