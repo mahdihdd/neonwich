@@ -1,11 +1,11 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
-.hidden{
-    display: none;
+.hidden {
+  display: none;
 }
-.active{
+.active {
   background-color: rgb(101, 180, 240);
 }
 .item {
@@ -122,16 +122,27 @@
   .controls button:hover {
     background-color: rgba(255, 255, 255, 0.8);
   } */
-.slide{
-  animation: moveup 1s ;
+.slide {
+  animation: moveup 1s;
 }
-  @keyframes moveup {
-    0% {
-      opacity: 0;
-      transform: translateY(40px);
-    }
-    100% {
-      opacity: 1;
-      transform: translate(0);
-    }
+.appear{
+  animation: apper 1s;
+}
+@keyframes moveup {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
   }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes apper {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
