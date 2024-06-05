@@ -6,9 +6,9 @@ export default function Product() {
   const {neonProduct} = usePost()
 
   return (
-    <div ref={neonProduct} className="flex flex-row justify-between items-center h-[730px] border-2 rounded-xl m-3">
-        <Outlet />
+    <div ref={neonProduct} className="flex flex-col sm:flex-row justify-between items-center h-[730px] border-2 rounded-xl m-3">
         <ProductItem />
+        <Outlet />
       </div>
   );
 }
