@@ -22,7 +22,7 @@ export default function Questions() {
   return (
     <div ref={questionBox} className="flex flex-col items-center h-[680px] border-2 rounded-xl m-3">
       <h1 className="mt-3">سولات متداول</h1>
-      <div className=" my-[100px] mx-auto flex flex-col gap-[24px]">
+      <div className="w-60 sm:w-[600px] my-[100px] mx-auto flex flex-col gap-[24px]">
         {question.map((el, i) => (
           <AccordionItem
             curOpen={curOpen}

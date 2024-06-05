@@ -8,6 +8,7 @@ export default function Footer() {
     <div ref={info} className="bg-[#4b5869] border-2 m-3 rounded-xl p-10 flex flex-col justify-center items-center">
       <p> تماس با ما</p>
       <p>نشانی</p>
+      <p>instagram</p>
     </div>
   );
 }

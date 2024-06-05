@@ -6,6 +6,7 @@ export default function Dropmenu() {
 
   function scrollToSection(ref) {
     ref.current.scrollIntoView({ behavior: "smooth" });
+    setIsOpen((isOpen) => !isOpen);
   }
 
   function dropOpen() {
@@ -16,8 +17,12 @@ export default function Dropmenu() {
   }
   return (
     <div>
-      <div onClick={dropToggle} className="cursor-pointer">
-      <i className="fa-solid fa-bars"></i>
+      <div onClick={dropToggle} className="cursor-pointer relative">
+        <i
+          className={`text-2xl ${
+            isOpen ? "fa-solid fa-bars" : "fa-solid fa-xmark"
+          }`}
+        ></i>
       </div>
 
       {isOpen ? (
