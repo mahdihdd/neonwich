@@ -63,7 +63,7 @@ export default function Slider() {
   const currentImage = images[currentIndex];
 
   return (
-    <div className="relative mt-3  sm:mx-8 md:mx-20 lg:mx-[170px] shadow-2xl slide">
+    <div className="relative mt-1 sm:mx-8 md:mx-20 lg:mx-[170px] shadow-2xl slide">
       <div className="overflow-hidden rounded-md lg:h-[650px] ">
         <img src={currentImage.src} alt={currentImage.subtitle} className="w-full h-full bg-contain object-fit"/>
       </div>

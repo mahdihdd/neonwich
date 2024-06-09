@@ -2,6 +2,14 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+@font-face {
+  font-family: 'aviny';
+  src: url('../public/fonts//l1x0_aviny_\(1\).ttf') format('truetype');
+}
+body{
+  font-family: 'aviny';
+}
+
 .hidden {
   display: none;
 }
@@ -128,6 +136,11 @@
 .appear{
   animation: apper 1s;
 }
+.drop-shadow-icon {
+  font-size: 2rem;
+  filter: drop-shadow(1px -1px 0 #0909a1);
+  animation: drop-shadow-animation 3s infinite;
+}
 @keyframes moveup {
   0% {
     opacity: 0;
@@ -144,5 +157,16 @@
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes drop-shadow-animation {
+  0% {
+    filter: drop-shadow(1px -1px 0 #0909a1);
+  }
+  50% {
+    filter: drop-shadow(1px -1px 0 transparent);
+  }
+  100% {
+    filter: drop-shadow(1px -1px 0 #0909a1);
   }
 }
