@@ -6,7 +6,7 @@ export default function DropMenuItem({ scrollToSection, dropOpen }) {
   return (
     <div
       onMouseEnter={dropOpen}
-      className="absolute right-10 top-13 z-40  bg-[#f2f3f4] rounded p-2"
+      className="absolute right-7 top-10 z-40  bg-[#f2f3f4] rounded p-2"
     >
       <div className="flex flex-col divide-y divide-solid">
         <button
