@@ -5,6 +5,7 @@ import Product from "./Product";
 import Order from "./Order";
 import Questions from "./Questions"
 import Footer from "./Footer";
+import CallIcon from "../components/CallIcon";
 
 export default function Structure() {
   
@@ -16,6 +17,7 @@ export default function Structure() {
       <Order />
       <Questions />
       <Footer />
+      <CallIcon />
     </>
   );
 }
