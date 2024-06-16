@@ -15,7 +15,7 @@ export default function Description() {
       </RevealLtr>
 
       <RevealRtl>
-        <p className="text-right">
+        <p className="text-right ">
           hello my name is the mahdi haddad, I am a front end developer, I
           studied at IKIU, I am happy
         </p>

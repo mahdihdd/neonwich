@@ -16,7 +16,7 @@ export default function AccordionItem({
   return (
     <RevealUp>
       <div
-        className={`shadow-md cursor-pointer border-t-4 border-white p-4 ${
+        className={`shadow-md cursor-pointer border-t-4 border-white p-4	 ${
           isOpen ? "open" : ""
         }`}
         onClick={handleToggle}

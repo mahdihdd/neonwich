@@ -3,11 +3,11 @@
 @import "tailwindcss/utilities";
 
 @font-face {
-  font-family: 'aviny';
-  src: url('../public/fonts//l1x0_aviny_\(1\).ttf') format('truetype');
+  font-family: "aviny";
+  src: url("../public/fonts//l1x0_aviny_\(1\).ttf") format("truetype");
 }
-body{
-  font-family: 'aviny';
+body {
+  font-family: "aviny";
 }
 
 .hidden {
@@ -61,79 +61,26 @@ body{
 
 /* OPEN STATE */
 .open {
-  border-top: 4px solid #087f5b;
+  border-top: 4px solid #faf9d2;
 }
 
 .open .number,
 .open .title {
-  color: #087f5b;
+  color: #000000;
 }
 
-/* .image-slider {
-    position: relative;
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
-  }
-  
-  .slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-  }
-  
-  .slide.active {
-    opacity: 1;
-  }
-  
-  .slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    text-align: center;
-  }
-  
-  .subtitle {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  }
-  
-  .controls {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20px;
-  }
-  
-  .controls button {
-    background-color: rgba(255, 255, 255, 0.5);
-    border: none;
-    color: #333;
-    font-size: 24px;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  .controls button:hover {
-    background-color: rgba(255, 255, 255, 0.8);
-  } */
+/* Add this CSS to your styles file */
+/* Add this CSS to your styles file */
+
+.text {
+  font-size: 24px;
+  text-shadow: 0 0 0 red; /* Initial red color */
+  animation: shadowAnimation 6s infinite;
+}
 .slide {
   animation: moveup 1s;
 }
-.appear{
+.appear {
   animation: apper 1s;
 }
 .drop-shadow-icon {
@@ -168,5 +115,17 @@ body{
   }
   100% {
     filter: drop-shadow(1px -1px 0 #0909a1);
+  }
+}
+@keyframes shadowAnimation {
+  0%,
+  100% {
+    text-shadow: 0 0 5px red; /* Red color */
+  }
+  33.33% {
+    text-shadow: 0 0 5px blue; /* Blue color */
+  }
+  66.66% {
+    text-shadow: 0 0 5px green; /* Green color */
   }
 }

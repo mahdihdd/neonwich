@@ -10,13 +10,13 @@ const images = [
     subtitle: "Subtitle for Image 2",
   },
   {
-    src : "../../public/images/killjoy-valorant-3d-3840x2160-9314.png",
-    subtitle : "Subtitle for Image 3"
+    src: "../../public/images/killjoy-valorant-3d-3840x2160-9314.png",
+    subtitle: "Subtitle for Image 3",
   },
   {
-    src : "../../public/images/taboo-tom-hardy-james-keziah-delaney-tv-series-2022-series-3000x2000-7988.jpg",
-    subtitle : "Subtitle for Image 4"
-  }
+    src: "../../public/images/taboo-tom-hardy-james-keziah-delaney-tv-series-2022-series-3000x2000-7988.jpg",
+    subtitle: "Subtitle for Image 4",
+  },
   // Add more image objects as needed
 ];
 
@@ -63,9 +63,13 @@ export default function Slider() {
   const currentImage = images[currentIndex];
 
   return (
-    <div className="relative mt-1 sm:mx-8 md:mx-20 lg:mx-[170px] shadow-2xl slide">
+    <div className="relative mt-[73px] sm:mx-8 md:mx-20 lg:mx-[170px] shadow-2xl slide">
       <div className="overflow-hidden rounded-md lg:h-[650px] ">
-        <img src={currentImage.src} alt={currentImage.subtitle} className="w-full h-full bg-contain object-fit"/>
+        <img
+          src={currentImage.src}
+          alt={currentImage.subtitle}
+          className="w-full h-full bg-contain object-fit"
+        />
       </div>
       <div className="absolute bottom-0 w-full rounded bg-black bg-opacity-50 text-white sm:py-1 md:py-2  py-1 px-6 flex flex-col items-center">
         <h4 className="md:text-2xl text-sm font-bold">

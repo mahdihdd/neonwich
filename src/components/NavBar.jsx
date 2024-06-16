@@ -3,8 +3,11 @@ import MenuItem from "../components/MenuItem";
 import Dropmenu from "./Dropmenu";
 
 export default function NavBar() {
-  const [isDesktop, setIsDesktop] = useState(window.innerWidth > 640); // Set breakpoint as needed
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth > 640);
+  const [showNavbar, setShowNavbar] = useState(true);
+  const [lastScrollTop, setLastScrollTop] = useState(0);
 
+  // responsive the menu of the navbar
   useEffect(() => {
     const handleResize = () => {
       setIsDesktop(window.innerWidth > 640); // Update state on window resize
@@ -15,16 +18,44 @@ export default function NavBar() {
       window.removeEventListener("resize", handleResize); // Clean up event listener
     };
   }, []);
+
+  // removing the navbar in scrolling
+  const handleScroll = () => {
+    const currentScrollTop =
+      window.pageYOffset || document.documentElement.scrollTop;
+
+    if (currentScrollTop > 700) {
+      if (currentScrollTop > lastScrollTop) {
+        setShowNavbar(false);
+      } else {
+        setShowNavbar(true);
+      }
+    }
+
+    setLastScrollTop(currentScrollTop <= 0 ? 0 : currentScrollTop);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollTop]);
+
   return (
-    <div className="flex w-full flex-row items-center justify-between  bg-[#eaeaea] py-2 px-3  mt-[3px]">
+    <nav
+      className={`flex fixed z-10 transition-transform duration-300 w-full flex-row items-center justify-between   bg-[#faf9d2] py-2 px-3 ${
+        showNavbar ? "transform translate-y-0" : "transform -translate-y-full"
+      }`}
+    >
       <img
         className="drop-shadow-icon"
         src="../../public/logo/neonwich 1.png"
         width="80px"
       />
-      {/* <h1 className="text-[35px]">نئون ویچ متخصص تابلو سازی</h1> */}
+      <h1 className="text-[35px] text">نئون ویچ متخصص تابلو سازی</h1>
 
       {isDesktop ? <MenuItem /> : <Dropmenu />}
-    </div>
+    </nav>
   );
 }
