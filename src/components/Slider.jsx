@@ -2,21 +2,17 @@ import React, { useState, useEffect, useRef } from "react";
 
 const images = [
   {
-    src: "../../public/images/astronaut-alone-fog-exploration-moon-surface-spacecraft-5200x3250-8231.jpg",
+    src: "../../public/images/1000002742.jpg",
     subtitle: "Subtitle for Image 1",
   },
   {
-    src: "../../public/images/binary-code-code-numbers-green-glow-agx3h70ga36galq2-agx3h70ga36galq2.jpg",
+    src: "../../public/images/PXL_20240618_185627596~2.jpg",
     subtitle: "Subtitle for Image 2",
   },
   {
-    src: "../../public/images/killjoy-valorant-3d-3840x2160-9314.png",
+    src: "../../public/images/PXL_20240618_185605823~2.jpg",
     subtitle: "Subtitle for Image 3",
-  },
-  {
-    src: "../../public/images/taboo-tom-hardy-james-keziah-delaney-tv-series-2022-series-3000x2000-7988.jpg",
-    subtitle: "Subtitle for Image 4",
-  },
+  }
   // Add more image objects as needed
 ];
 

@@ -14,7 +14,7 @@ body {
   display: none;
 }
 .active {
-  background-color: rgb(101, 180, 240);
+  /* background-color: rgb(101, 180, 240); */
 }
 .item {
   /* box-shadow: 0 0 30px rgba(0, 0, 0, 0.1); */
