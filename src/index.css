@@ -69,11 +69,7 @@ body {
   color: #000000;
 }
 
-/* Add this CSS to your styles file */
-/* Add this CSS to your styles file */
-
-.text {
-  font-size: 24px;
+.textcolor {
   text-shadow: 0 0 0 red; /* Initial red color */
   animation: shadowAnimation 6s infinite;
 }
@@ -120,12 +116,12 @@ body {
 @keyframes shadowAnimation {
   0%,
   100% {
-    text-shadow: 0 0 5px red; /* Red color */
+    text-shadow: 0 0 5px rgb(255, 0, 191); /* Red color */
   }
   33.33% {
-    text-shadow: 0 0 5px blue; /* Blue color */
+    text-shadow: 0 0 5px rgb(255, 0, 0); /* Blue color */
   }
   66.66% {
-    text-shadow: 0 0 5px green; /* Green color */
+    text-shadow: 0 0 5px rgb(8, 37, 122); /* Green color */
   }
 }

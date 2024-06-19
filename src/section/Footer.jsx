@@ -19,9 +19,9 @@ export default function Footer() {
   return (
     <div
       ref={info}
-      className="bg-[#faf9d2] border-2 m-3 rounded-xl p-4 flex  flex-row-reverse justify-around items-center"
+      className="bg-[#faf9d2] border-2 m-3 rounded-xl p-4  flex  flex-row-reverse justify-around items-center"
     >
-      <div className="flex flex-col items-end">
+      <div className="flex flex-col items-end gap-1">
         <h1 className="mb-2 text-[35px]">ارتباط با ما</h1>
         <div className="flex gap-1 flex-row-reverse">
           <IoCallOutline />
@@ -33,15 +33,17 @@ export default function Footer() {
           <p>: نشانی</p>
           <p>قزوین، مجتمج تجاری البرز</p>
         </div>
+        <div className="flex justify-end gap-7 w-full mt-3">
+          <button onClick={openInstagram}>
+            <FaInstagram />
+          </button>
+          <button onClick={openTelegram}>
+            <BsTelegram />
+          </button>
+        </div>
       </div>
-
-      <div className="flex gap-5">
-        <button onClick={openInstagram}>
-          <FaInstagram />
-        </button>
-        <button onClick={openTelegram}>
-          <BsTelegram />
-        </button>
+      <div className="text-7xl textcolor">
+        نئون <sub className="text-6xl ">ویچ</sub>
       </div>
     </div>
   );

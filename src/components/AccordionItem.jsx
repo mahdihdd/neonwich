@@ -14,9 +14,9 @@ export default function AccordionItem({
   }
 
   return (
-    <RevealUp>
+    // <RevealUp>
       <div
-        className={`shadow-md cursor-pointer border-t-4 border-white p-4	 ${
+        className={`shadow-md cursor-pointer border-t-4 border-white p-4 rounded-md	 ${
           isOpen ? "open" : ""
         }`}
         onClick={handleToggle}
@@ -31,6 +31,6 @@ export default function AccordionItem({
           <div className="appear content-box text-right">{children}</div>
         )}
       </div>
-    </RevealUp>
+    // </RevealUp>
   );
 }

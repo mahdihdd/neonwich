@@ -5,7 +5,6 @@ import { TbSolarElectricity } from "react-icons/tb";
 import { BsFileText } from "react-icons/bs";
 import { MdConnectWithoutContact } from "react-icons/md";
 
-
 export default function MenuItem() {
   const { descript, neonProduct, howOrder, questionBox, info } = usePost();
 
@@ -14,11 +13,10 @@ export default function MenuItem() {
   }
 
   return (
-    <div className="flex flex-row-reverse gap-[30px]">
-    
+    <div className="flex flex-row-reverse gap-[30px]  sm:text-sm sm:text-normal md:text-lg lg:text-2xl ">
       <button
         onClick={() => scrollToSection(descript)}
-        className="flex gap-1 text-right p-2 hover:bg-[#f1f09b] hover:rounded-md "
+        className="flex justify-center items-center gap-1 text-right p-2 hover:bg-[#f1f09b] hover:rounded-md "
       >
         <BsFileText />
         توضیحات
@@ -26,7 +24,7 @@ export default function MenuItem() {
 
       <button
         onClick={() => scrollToSection(neonProduct)}
-        className="flex gap-1 text-right p-2 hover:bg-[#f1f09b] hover:rounded-md"
+        className="flex justify-center items-center gap-1 text-right p-2 hover:bg-[#f1f09b] hover:rounded-md"
       >
         <TbSolarElectricity />
         نمونه کار
@@ -34,21 +32,21 @@ export default function MenuItem() {
 
       <button
         onClick={() => scrollToSection(howOrder)}
-        className="flex gap-1 text-right p-2 hover:bg-[#f1f09b] hover:rounded-md "
+        className="flex justify-center items-center gap-1 text-right p-2 hover:bg-[#f1f09b] hover:rounded-md "
       >
         <CiShoppingCart />
         نحوه سفارش
       </button>
       <button
         onClick={() => scrollToSection(questionBox)}
-        className="flex gap-1 text-right p-2 hover:bg-[#f1f09b] hover:rounded-md"
+        className="flex justify-center items-center gap-1 text-right p-2 hover:bg-[#f1f09b] hover:rounded-md"
       >
         <LiaQuestionSolid />
         سوالات متداول
       </button>
       <button
         onClick={() => scrollToSection(info)}
-        className="flex gap-1 text-right p-2 hover:bg-[#f1f09b] hover:rounded-md"
+        className="flex justify-center items-center gap-1 text-right p-2 hover:bg-[#f1f09b] hover:rounded-md"
       >
         <MdConnectWithoutContact />
         ارتباط با ما

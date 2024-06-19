@@ -44,7 +44,7 @@ export default function NavBar() {
 
   return (
     <nav
-      className={`flex fixed z-10 transition-transform duration-300 w-full flex-row items-center justify-between   bg-[#faf9d2] py-2 px-3 ${
+      className={`flex fixed z-10 transition-transform duration-300 w-full flex-row items-center justify-between   bg-[#fffed3] py-2 px-3 ${
         showNavbar ? "transform translate-y-0" : "transform -translate-y-full"
       }`}
     >
@@ -53,8 +53,8 @@ export default function NavBar() {
         src="../../public/logo/neonwich 1.png"
         width="80px"
       />
-      <h1 className="text-[35px] text">نئون ویچ متخصص تابلو سازی</h1>
 
+      {/* <h1 className="text-[35px] text">نئون ویچ</h1> */}
       {isDesktop ? <MenuItem /> : <Dropmenu />}
     </nav>
   );

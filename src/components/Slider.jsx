@@ -71,7 +71,7 @@ export default function Slider() {
           className="w-full h-full bg-contain object-fit"
         />
       </div>
-      <div className="absolute bottom-0 w-full rounded bg-black bg-opacity-50 text-white sm:py-1 md:py-2  py-1 px-6 flex flex-col items-center">
+      <div className="absolute bottom-0 w-full rounded bg-[#ffffc5] bg-opacity-50 text-white sm:py-1 md:py-2  py-1 px-6 flex flex-col items-center">
         <h4 className="md:text-2xl text-sm font-bold">
           {currentImage.subtitle}
         </h4>
@@ -81,8 +81,8 @@ export default function Slider() {
               key={index}
               className={`w-3 h-3 rounded-full ${
                 index === currentIndex
-                  ? "bg-white"
-                  : "bg-gray-400 hover:bg-gray-300"
+                  ? "bg-[#fefe38]"
+                  : "bg-[#ffffdd] hover:bg-gray-300"
               }`}
               onClick={() => handleDotClick(index)}
             />
@@ -91,13 +91,13 @@ export default function Slider() {
       </div>
       <div className="absolute top-1/2 transform -translate-y-1/2 w-full flex justify-between px-4">
         <button
-          className="bg-black bg-opacity-50 text-white px-1 py-1 rounded-md hover:bg-opacity-75 sm:px-2 sm:py-2"
+          className="bg-[#ffffc5] bg-opacity-50 text-white px-1 py-1 rounded-md hover:bg-opacity-75 sm:px-2 sm:py-2"
           onClick={handlePrevClick}
         >
           &larr;
         </button>
         <button
-          className="bg-black bg-opacity-50 text-white px-1 py-1 rounded-md hover:bg-opacity-75 sm:px-2 sm:py-2"
+          className="bg-[#ffffc5] bg-opacity-50 text-white px-1 py-1 rounded-md hover:bg-opacity-75 sm:px-2 sm:py-2"
           onClick={handleNextClick}
         >
           &rarr;
