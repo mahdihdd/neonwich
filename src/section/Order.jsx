@@ -5,7 +5,7 @@ export default function Order() {
 
   return (
     <div ref={howOrder} className="h-[700px] flex border-2 rounded-xl flex-col items-center m-3">
-      <h1 className="mt-5">نحوه سفارش</h1>
+      <h1 className="mt-5 text-[30px]">مـراحل آمـاده سـازی</h1>
     </div>
   );
 }

@@ -19,7 +19,7 @@ export default function Footer() {
   return (
     <div
       ref={info}
-      className="bg-[#80BCBD] border-2 m-3 rounded-xl p-4  flex  flex-row-reverse justify-around items-center"
+      className="bg-[#A0C49D] border-2 m-3 rounded-xl p-4  flex  flex-row-reverse justify-around items-center"
     >
       <div className="flex flex-col items-end gap-1">
         <h1 className="mb-2 text-[35px]">ارتباط با ما</h1>

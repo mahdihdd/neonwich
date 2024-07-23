@@ -4,6 +4,7 @@ import { LiaQuestionSolid } from "react-icons/lia";
 import { TbSolarElectricity } from "react-icons/tb";
 import { BsFileText } from "react-icons/bs";
 import { MdConnectWithoutContact } from "react-icons/md";
+import TextWithBlackOutline from "./TextWithBlackOutline";
 
 export default function MenuItem() {
   const { descript, neonProduct, howOrder, questionBox, info } = usePost();
@@ -16,40 +17,40 @@ export default function MenuItem() {
     <div className="flex flex-row-reverse gap-[30px]  sm:text-sm sm:text-normal md:text-lg lg:text-2xl ">
       <button
         onClick={() => scrollToSection(descript)}
-        className="flex justify-center items-center gap-1 text-right p-2 hover:bg-[#4a9b9c] hover:rounded-md "
+        className="flex justify-center items-center gap-1 text-right p-2 hover:bg-[#C4D7B2] hover:rounded-md "
       >
         <BsFileText />
-        توضیحات
+        <TextWithBlackOutline>تـوضـیـحات</TextWithBlackOutline>
       </button>
 
       <button
         onClick={() => scrollToSection(neonProduct)}
-        className="flex justify-center items-center gap-1 text-right p-2 hover:bg-[#4a9b9c] hover:rounded-md"
+        className="flex justify-center items-center gap-1 text-right p-2 hover:bg-[#C4D7B2] hover:rounded-md"
       >
         <TbSolarElectricity />
-        نمونه کار
+        <TextWithBlackOutline>نـمونـه کـار</TextWithBlackOutline>
       </button>
 
       <button
         onClick={() => scrollToSection(howOrder)}
-        className="flex justify-center items-center gap-1 text-right p-2 hover:bg-[#4a9b9c] hover:rounded-md "
+        className="flex justify-center items-center gap-1 text-right p-2 hover:bg-[#C4D7B2] hover:rounded-md "
       >
         <CiShoppingCart />
-        نحوه سفارش
+        <TextWithBlackOutline>نـحوه سـفارش</TextWithBlackOutline>
       </button>
       <button
         onClick={() => scrollToSection(questionBox)}
-        className="flex justify-center items-center gap-1 text-right p-2 hover:bg-[#4a9b9c] hover:rounded-md"
+        className="flex justify-center items-center gap-1 text-right p-2 hover:bg-[#C4D7B2] hover:rounded-md"
       >
         <LiaQuestionSolid />
-        سوالات متداول
+        <TextWithBlackOutline>ســوالات مـتداول</TextWithBlackOutline>
       </button>
       <button
         onClick={() => scrollToSection(info)}
-        className="flex justify-center items-center gap-1 text-right p-2 hover:bg-[#4a9b9c] hover:rounded-md"
+        className="flex justify-center items-center gap-1 text-right p-2 hover:bg-[#C4D7B2] hover:rounded-md"
       >
         <MdConnectWithoutContact />
-        ارتباط با ما
+        <TextWithBlackOutline>ارتـباط بـا ما</TextWithBlackOutline>
       </button>
     </div>
   );
