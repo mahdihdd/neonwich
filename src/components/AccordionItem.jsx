@@ -1,5 +1,3 @@
-import RevealUp from "./animation/RevealUp";
-
 export default function AccordionItem({
   num,
   title,
@@ -14,23 +12,20 @@ export default function AccordionItem({
   }
 
   return (
-    // <RevealUp>
-      <div
-        className={`shadow-md cursor-pointer border-t-4 border-white p-4 rounded-md	 ${
-          isOpen ? "open" : ""
-        }`}
-        onClick={handleToggle}
-      >
-        <div className="flex justify-between">
-          <p className="icon">{isOpen ? "-" : "+"}</p>
-          <p className="title text-right">{title}</p>
-          {/* <p className="number">{num < 9 ? `0${num + 1}` : num + 1}</p> */}
-        </div>
-
-        {isOpen && (
-          <div className="appear content-box text-right">{children}</div>
-        )}
+    <div
+      className={`shadow-md cursor-pointer border-t-4 border-white p-4 rounded-md	 ${
+        isOpen ? "open" : ""
+      }`}
+      onClick={handleToggle}
+    >
+      <div className="flex justify-between">
+        <p className="icon">{isOpen ? "-" : "+"}</p>
+        <p className="title text-right sm:text-[22px] ">{title}</p>
       </div>
-    // </RevealUp>
+
+      {isOpen && (
+        <div className="appear content-box text-right text-[18px]">{children}</div>
+      )}
+    </div>
   );
 }

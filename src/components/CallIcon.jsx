@@ -5,6 +5,10 @@ export default function CallIcon() {
   const phoneNumber = "09371816668";
 
   const handleIconClick = () => {
+    if(showPhoneNumber === false){
+      window.location.href = `tel:${phoneNumber}`;
+
+    }
     setShowPhoneNumber(!showPhoneNumber);
   };
 
@@ -16,14 +20,14 @@ export default function CallIcon() {
       >
         <i className="fa-solid fa-phone m-1 "></i>
       </button>
-      {showPhoneNumber && (
+      {/* {showPhoneNumber && (
         <div className={`absolute bottom-12 right-[-25px] bg-white p-2 shadow-lg rounded-md ${showPhoneNumber ? 'animate-slideUp' : 'animate-slideDown'}`}>
           <div className="flex gap-1">
             <p>📞</p>
             <span className="text-gray-800">{phoneNumber}</span>
           </div>
         </div>
-      )}
+      )} */}
     </div>
   );
 }

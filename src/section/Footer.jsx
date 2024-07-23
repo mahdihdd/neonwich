@@ -19,7 +19,7 @@ export default function Footer() {
   return (
     <div
       ref={info}
-      className="bg-[#faf9d2] border-2 m-3 rounded-xl p-4  flex  flex-row-reverse justify-around items-center"
+      className="bg-[#80BCBD] border-2 m-3 rounded-xl p-4  flex  flex-row-reverse justify-around items-center"
     >
       <div className="flex flex-col items-end gap-1">
         <h1 className="mb-2 text-[35px]">ارتباط با ما</h1>
@@ -42,8 +42,13 @@ export default function Footer() {
           </button>
         </div>
       </div>
-      <div className="text-7xl textcolor">
-        نئون <sub className="text-6xl ">ویچ</sub>
+      <div>
+        <img
+          className="drop-shadow-icon"
+          src="../../public/images/neonwich.png"
+          width={150}
+          height={100}
+        />
       </div>
     </div>
   );

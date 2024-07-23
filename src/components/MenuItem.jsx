@@ -16,7 +16,7 @@ export default function MenuItem() {
     <div className="flex flex-row-reverse gap-[30px]  sm:text-sm sm:text-normal md:text-lg lg:text-2xl ">
       <button
         onClick={() => scrollToSection(descript)}
-        className="flex justify-center items-center gap-1 text-right p-2 hover:bg-[#f1f09b] hover:rounded-md "
+        className="flex justify-center items-center gap-1 text-right p-2 hover:bg-[#4a9b9c] hover:rounded-md "
       >
         <BsFileText />
         توضیحات
@@ -24,7 +24,7 @@ export default function MenuItem() {
 
       <button
         onClick={() => scrollToSection(neonProduct)}
-        className="flex justify-center items-center gap-1 text-right p-2 hover:bg-[#f1f09b] hover:rounded-md"
+        className="flex justify-center items-center gap-1 text-right p-2 hover:bg-[#4a9b9c] hover:rounded-md"
       >
         <TbSolarElectricity />
         نمونه کار
@@ -32,21 +32,21 @@ export default function MenuItem() {
 
       <button
         onClick={() => scrollToSection(howOrder)}
-        className="flex justify-center items-center gap-1 text-right p-2 hover:bg-[#f1f09b] hover:rounded-md "
+        className="flex justify-center items-center gap-1 text-right p-2 hover:bg-[#4a9b9c] hover:rounded-md "
       >
         <CiShoppingCart />
         نحوه سفارش
       </button>
       <button
         onClick={() => scrollToSection(questionBox)}
-        className="flex justify-center items-center gap-1 text-right p-2 hover:bg-[#f1f09b] hover:rounded-md"
+        className="flex justify-center items-center gap-1 text-right p-2 hover:bg-[#4a9b9c] hover:rounded-md"
       >
         <LiaQuestionSolid />
         سوالات متداول
       </button>
       <button
         onClick={() => scrollToSection(info)}
-        className="flex justify-center items-center gap-1 text-right p-2 hover:bg-[#f1f09b] hover:rounded-md"
+        className="flex justify-center items-center gap-1 text-right p-2 hover:bg-[#4a9b9c] hover:rounded-md"
       >
         <MdConnectWithoutContact />
         ارتباط با ما

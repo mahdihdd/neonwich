@@ -21,7 +21,7 @@ export default function ProductItem() {
           </div>
         </div>
       </div>
-      <div className="h-[0.5px] w-[1100px] shadow-2xl bg-black mx-7 rounded-xl"></div>
+      
     </>
   );
 }

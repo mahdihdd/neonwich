@@ -12,7 +12,7 @@ const images = [
   {
     src: "../../public/images/PXL_20240618_185605823~2.jpg",
     subtitle: "Subtitle for Image 3",
-  }
+  },
   // Add more image objects as needed
 ];
 
@@ -59,7 +59,7 @@ export default function Slider() {
   const currentImage = images[currentIndex];
 
   return (
-    <div className="relative mt-[73px] sm:mx-8 md:mx-20 lg:mx-[170px] shadow-2xl slide">
+    <div className="relative mt-[73px] sm:mx-8 md:mx-20 lg:mx-[170px] shadow-2xl slide ">
       <div className="overflow-hidden rounded-md lg:h-[650px] ">
         <img
           src={currentImage.src}
@@ -67,7 +67,7 @@ export default function Slider() {
           className="w-full h-full bg-contain object-fit"
         />
       </div>
-      <div className="absolute bottom-0 w-full rounded bg-[#ffffc5] bg-opacity-50 text-white sm:py-1 md:py-2  py-1 px-6 flex flex-col items-center">
+      <div className="absolute bottom-0 w-full rounded bg-[#AAD9BB] bg-opacity-50 text-white sm:py-1 md:py-2  py-1 px-6 flex flex-col items-center">
         <h4 className="md:text-2xl text-sm font-bold">
           {currentImage.subtitle}
         </h4>
@@ -77,8 +77,8 @@ export default function Slider() {
               key={index}
               className={`w-3 h-3 rounded-full ${
                 index === currentIndex
-                  ? "bg-[#fefe38]"
-                  : "bg-[#ffffdd] hover:bg-gray-300"
+                  ? "bg-[#5ea9ab]"
+                  : "bg-[#AAD9BB] hover:bg-gray-300"
               }`}
               onClick={() => handleDotClick(index)}
             />
@@ -87,13 +87,13 @@ export default function Slider() {
       </div>
       <div className="absolute top-1/2 transform -translate-y-1/2 w-full flex justify-between px-4">
         <button
-          className="bg-[#ffffc5] bg-opacity-50 text-white px-1 py-1 rounded-md hover:bg-opacity-75 sm:px-2 sm:py-2"
+          className="bg-[#AAD9BB] bg-opacity-50 text-white px-1 py-1 rounded-md hover:bg-opacity-75 sm:px-2 sm:py-2"
           onClick={handlePrevClick}
         >
           &larr;
         </button>
         <button
-          className="bg-[#ffffc5] bg-opacity-50 text-white px-1 py-1 rounded-md hover:bg-opacity-75 sm:px-2 sm:py-2"
+          className="bg-[#AAD9BB] bg-opacity-50 text-white px-1 py-1 rounded-md hover:bg-opacity-75 sm:px-2 sm:py-2"
           onClick={handleNextClick}
         >
           &rarr;

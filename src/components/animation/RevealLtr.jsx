@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 
-export default function RevealLtr({ children }) {
+export default function RevealLtr({ children, style }) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const mainControls = useAnimation();
@@ -13,6 +13,7 @@ export default function RevealLtr({ children }) {
 
   return (
     <motion.div
+      className={style}
       ref={ref}
       variants={{
         hidden: { opacity: 0, x: -30 },
