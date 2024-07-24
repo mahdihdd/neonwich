@@ -44,7 +44,7 @@ export default function NavBar() {
 
   return (
     <nav
-      className={`flex fixed z-10 text-white  text-stroke-black text-stroke-2 text-4xl transition-transform duration-300 w-full flex-row items-center justify-between shadow-md  bg-[#A0C49D] py-2 px-3 ${
+      className={`flex z-50 fixed  text-white  text-stroke-black text-stroke-2 text-4xl transition-transform duration-300 w-full flex-row items-center justify-between shadow-md  bg-[#A0C49D] py-2 px-3 ${
         showNavbar ? "transform translate-y-0" : "transform -translate-y-full"
       }`}
     >

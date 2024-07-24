@@ -1,4 +1,5 @@
 import { usePost } from "../context/PostProvider";
+import TextWithBlackOutline from "./TextWithBlackOutline";
 
 export default function DropMenuItem({ scrollToSection, dropOpen }) {
   const { descript, neonProduct, howOrder, questionBox, info } = usePost();
@@ -6,38 +7,38 @@ export default function DropMenuItem({ scrollToSection, dropOpen }) {
   return (
     <div
       onMouseEnter={dropOpen}
-      className="absolute right-7 top-10 z-40  bg-[#f2f3f4] rounded p-2"
+      className="absolute right-7 top-10 z-40  bg-[#C4D7B2] rounded-lg p-2"
     >
       <div className="flex flex-col divide-y divide-solid">
         <button
           onClick={() => scrollToSection(descript)}
-          className="text-right pb-1  hover:bg-[#b4b4b5]"
+          className="text-center pb-1  hover:bg-[#b4b4b5]"
         >
-          توضیحات
+         تـوضـیحـات
         </button>
         <button
           onClick={() => scrollToSection(neonProduct)}
-          className="text-right pb-1  hover:bg-[#b4b4b5]"
+          className="text-center pb-1  hover:bg-[#b4b4b5]"
         >
-          نمونه کار
+          نـمونـه کـار
         </button>
         <button
           onClick={() => scrollToSection(howOrder)}
-          className="text-right pb-1  hover:bg-[#b4b4b5]"
+          className="text-center pb-1  hover:bg-[#b4b4b5]"
         >
-          نحوه سفارش
+          نـحوه سـفارش
         </button>
         <button
           onClick={() => scrollToSection(questionBox)}
-          className="text-right pb-1  hover:bg-[#b4b4b5]"
+          className="text-center pb-1  hover:bg-[#b4b4b5]"
         >
-          سوالات متداول
+          سـوالات مـتـداول
         </button>
         <button
           onClick={() => scrollToSection(info)}
-          className="text-right pb-1  hover:bg-[#b4b4b5]"
+          className="text-center pb-1  hover:bg-[#b4b4b5]"
         >
-          تماس باما
+          تـماس بامـا
         </button>
       </div>
     </div>
