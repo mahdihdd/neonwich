@@ -12,11 +12,11 @@ export default function Structure() {
     <>
       <Intor />
       <Description />
-      <Product />
+      {/* <Product />
       <Order />
       <Questions />
       <Footer />
-      <CallIcon />
+      <CallIcon /> */}
     </>
   );
 }

@@ -3,6 +3,11 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      screens: {
+        "xxl": "1650px",
+        "s": "450px",
+        "2s": "340px",
+      },
       keyframes: {
         slideUp: {
           "0%": { transform: "translateY(25%)", opacity: "0" },
