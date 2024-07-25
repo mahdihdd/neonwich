@@ -10,7 +10,7 @@ export default function NavBar() {
   // responsive the menu of the navbar
   useEffect(() => {
     const handleResize = () => {
-      setIsDesktop(window.innerWidth > 640); // Update state on window resize
+      setIsDesktop(window.innerWidth > 660); // Update state on window resize
     };
 
     window.addEventListener("resize", handleResize);

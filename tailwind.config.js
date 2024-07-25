@@ -6,7 +6,7 @@ export default {
       screens: {
         "xxl": "1650px",
         "s": "450px",
-        "2s": "340px",
+        "2s": "300px",
       },
       keyframes: {
         slideUp: {

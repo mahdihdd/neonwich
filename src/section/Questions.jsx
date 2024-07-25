@@ -13,7 +13,7 @@ export default function Questions() {
     >
       <h1 className="mt-3 text-[30px]">ســوالات مـتـداول</h1>
       <RevealUp>
-        <div className="w-[310px] sm:w-[500px]  my-[100px] mx-auto flex flex-col gap-[24px]">
+        <div className="2s:w-[290px] s:w-[410px] sm:w-[500px]  my-[100px] mx-auto flex flex-col gap-[24px]">
           {question.map((el, i) => (
             <AccordionItem
               curOpen={curOpen}
