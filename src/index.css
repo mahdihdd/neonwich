@@ -22,7 +22,10 @@ body {
 .hidden {
   display: none;
 }
-
+.active{
+  background-color: #E1ECC8;
+  color: #fff;
+}
 
 .item {
   /* box-shadow: 0 0 30px rgba(0, 0, 0, 0.1); */

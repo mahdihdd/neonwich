@@ -6,7 +6,7 @@ export default function Product() {
   const {neonProduct} = usePost()
 
   return (
-    <div ref={neonProduct} className="flex flex-col  justify-between items-center h-[730px] m-3">
+    <div ref={neonProduct} className="flex flex-col  justify-between items-center mb-14  m-3">
         <ProductItem />
         <Outlet />
       </div>

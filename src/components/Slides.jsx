@@ -19,7 +19,7 @@ export default function Slides() {
       }}
       navigation={true}
       modules={[Autoplay, Pagination, Navigation]}
-      className="w-full h-full mt-[68px]"
+      className="w-full h-full mt-[68px] slide"
     >
       <SwiperSlide className="text-center flex justify-center items-center h-[500px] sm:h-[350px] md:h-[450px] lg:h-[660px]">
         <img
