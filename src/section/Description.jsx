@@ -8,7 +8,7 @@ export default function Description() {
   return (
     <div
       ref={descript}
-      className="bg-[#E1ECC8] flex flex-col-reverse justify-center sm:flex-row  mt-10 h-[500px] sm:h-[680px] border-2 rounded-xl m-3"
+      className="bg-[#E1ECC8] flex flex-col-reverse justify-center sm:flex-row  mt-48 h-[500px] sm:h-[680px] border-2 rounded-xl m-3"
     >
       <RevealLtr style="h-full w-full sm:w-3/4  relative sm:bg-[#C3EDC0]  ">
         <div className="w-[300px] 2s:w-[310px] s:w-[340px] sm:w-[400px] absolute text-[19px] sm:text-[25px] left-1/2 bottom-2 transform -translate-x-1/2 sm:transform-none sm:-translate-x-0 mx-auto sm:bottom-2 sm:left-1 md:bottom-6 lg:bottom-16 lg:left-20 xl:left-[200px] 2xl:left-[300px] xxl:left-[550px] text-right bg-[#E9FFC2] p-5 rounded-xl leading-normal z-40">
