@@ -1,12 +1,18 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: "class",
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      transitionProperty: {
+        colors:
+          "color, background-color, border-color, text-decoration-color, fill, stroke",
+      },
       screens: {
-        "xxl": "1650px",
+       " xxl": "1650px",
         "s": "450px",
         "2s": "300px",
+        "x" : "0px"
       },
       keyframes: {
         slideUp: {

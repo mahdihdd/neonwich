@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VTIMEZONE
+TZID:Asia/Tehran
+X-LIC-LOCATION:Asia/Tehran
+BEGIN:STANDARD
+TZOFFSETFROM:+0330
+TZOFFSETTO:+0330
+TZNAME:GMT+3:30
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Tehran:20240731T100000
+DTEND;TZID=Asia/Tehran:20240731T101500
+DTSTAMP:20240729T120805Z
+ORGANIZER;CN=Mansour Naseri:mailto:mansournaseri2000@gmail.com
+UID:29samom9t662vcm4rutaefqqt7@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=mahdihaddad82@gmail.com;X-NUM-GUESTS=0:mailto:mahdihaddad82@gmail.c
+ om
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=Mansour Naseri;X-NUM-GUESTS=0:mailto:mansournaseri2000@gmail.com
+X-GOOGLE-CONFERENCE:https://meet.google.com/osd-voxv-zzm
+X-MICROSOFT-CDO-OWNERAPPTID:-1044834805
+CREATED:20240729T120803Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nJoin with Google Meet: https://meet.google.com/os
+ d-voxv-zzm\n\nLearn more about Meet at: https://support.google.com/a/users/
+ answer/9282720\n\nPlease do not edit this section.\n-::~:~::~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20240729T120802Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Mahdi haddad
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

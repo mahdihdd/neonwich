@@ -24,7 +24,7 @@ export default function Order() {
   return (
     <div
       ref={howOrder}
-      className="flex text-white flex-col justify-between bg-[#C4D7B2] items-center mx-20 2s:mx-3 s:mx-16 sm:mx-2 h-[1200px] sm:h-[1300px] md:h-[300px] lg:h-[400px] border-2 rounded-xl"
+      className="flex text-black flex-col justify-between bg-[#C9DBB2] items-center mx-20 2s:mx-3 s:mx-16 sm:mx-2 h-[1200px] sm:h-[1300px] md:h-[300px] lg:h-[400px] border-2 rounded-xl"
     >
       <h1 className="text-[30px] mt-5 ">مـراحل آمـاده سـازی</h1>
       <div className="flex flex-col mb-10 justify-center md:flex-row-reverse gap-14 sm:gap-10 md:gap-8 lg:gap-10 xl:gap-24 2xl:gap-32 w-full">

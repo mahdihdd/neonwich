@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from "react";
 import MenuItem from "../components/MenuItem";
 import Dropmenu from "./Dropmenu";
+import useDarkMode from "../hooks/useDarkMode";
 
 export default function NavBar() {
+  const isDarkMode = useDarkMode();
+
   const [isDesktop, setIsDesktop] = useState(window.innerWidth > 640);
   const [showNavbar, setShowNavbar] = useState(true);
   const [lastScrollTop, setLastScrollTop] = useState(0);
@@ -44,7 +47,7 @@ export default function NavBar() {
 
   return (
     <nav
-      className={`flex z-50 fixed  text-white  text-stroke-black text-stroke-2 text-4xl transition-transform duration-300 w-full flex-row items-center justify-between shadow-md  bg-[#A0C49D] py-2 px-3 ${
+      className={`flex z-50 fixed  text-black   text-stroke-black text-stroke-2 s:text-lg s:font-medium	sm:font-bold sm:text-4xl transition-transform duration-300 w-full flex-row items-center justify-between shadow-md  bg-[#C4D7B2]   py-2 px-3 ${
         showNavbar ? "transform translate-y-0" : "transform -translate-y-full"
       }`}
     >

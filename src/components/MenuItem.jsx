@@ -14,7 +14,7 @@ export default function MenuItem() {
   }
 
   return (
-    <div className="flex flex-row-reverse gap-[30px]  sm:text-sm sm:text-normal md:text-lg lg:text-2xl ">
+    <div className="flex flex-row-reverse sm:gap-[20px] md:gap-[30px]  sm:text-[15px] sm:text-normal md:text-lg lg:text-2xl ">
       <button
         onClick={() => scrollToSection(descript)}
         className="flex justify-center items-center gap-1 text-right p-2 hover:bg-[#C4D7B2] hover:rounded-md "

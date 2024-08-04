@@ -6,7 +6,6 @@ export default function Intor() {
   return (
     <div className="flex flex-col items-center">
       <NavBar />
-      {/* <NewSlider /> */}
       <Slides />
     </div>
   );
