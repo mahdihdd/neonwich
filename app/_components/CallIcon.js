@@ -4,7 +4,7 @@ import { IoCallOutline } from "react-icons/io5";
 
 export default function CallIcon() {
   const [showPhoneNumber, setShowPhoneNumber] = useState(false);
-  const phoneNumber = "09371816668";
+  const phoneNumber = "09962812008";
 
   const handleIconClick = () => {
     if (showPhoneNumber === false) {
