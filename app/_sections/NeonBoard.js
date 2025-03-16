@@ -5,32 +5,32 @@ import ProductItem from "../_components/ProductItem";
 const products = [
   
   {
-    src: "/images/product/product2.jpg",
+    src: "/images/product/product1.jpg",
     key: "2",
     name: "تابلو نئون کافی شاپ",
   },
   {
-    src: "/images/product/product3.jpg",
+    src: "/images/product/product2.jpg",
     key: "3",
     name: "تابلو نئون خودرو",
   },
   {
-    src: "/images/product/product4.jpg",
+    src: "/images/product/product3.jpg",
     key: "4",
     name: "تابلو نئون بوتیک",
   },
   {
-    src: "/images/product/product5.jpg",
+    src: "/images/product/product4.jpg",
     key: "5",
     name: "تابلو نئون میوه",
   },
   {
-    src: "/images/product/product6.jpg",
+    src: "/images/product/product5.jpg",
     key: "6",
     name: "تابلو نئون اتاق فرار",
   },
   {
-    src: "/images/product/product7.jpg",
+    src: "/images/product/product6.jpg",
     key: "7",
     name: "تابلو نئون موبایل",
   },
@@ -66,13 +66,13 @@ const products = [
   },
 
   {
-    src: "/images/product/product15.jpg",
+    src: "/images/product/product14.jpg",
     key: "15",
     name: "تابلو نئون دخانیات",
   },
   
   {
-    src: "/images/product/product20.png",
+    src: "/images/product/product15.jpg",
     key: "17",
     name: "تابلو نئون موسیقی",
   },
