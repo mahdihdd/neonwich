@@ -261,19 +261,16 @@ export default function WhyUs() {
           چرا نئون ویچ؟
         </h1>
         {details.map((feature, index) => (
-          <div
-            key={index}
-            className="flex flex-col items-center md:flex-row md:items-start md:justify-between bg-white mx-4 md:mx-28 p-6 rounded-lg shadow-md text-right border-r-4 border-green-600"
-          >
+          <div key={feature.imageSrc} className="flex flex-col items-center md:flex-row md:items-center md:justify-between bg-white mx-4 md:mx-28 p-6 rounded-lg shadow-md text-right border-r-4 border-green-600">
             <Image
               src={feature.imageSrc}
               width={120}
               height={100}
               alt={feature.title}
-              className="w-24 h-24 md:w-52 md:h-52 object-cover rounded-lg"
+              className="w-24 h-24 md:w-36 md:h-36 lg:w-48 lg:h-48 object-contain rounded-lg"
               unoptimized
             />
-            <div className="flex flex-col mt-4 md:mt-0 md:mr-6">
+            <div className="flex flex-col justify-center mt-4 md:mt-0 md:mr-6">
               <h2 className="text-sm sm:text-lg md:text-xl font-bold text-green-600 mb-2 md:mb-4">
                 {feature.title}
               </h2>
