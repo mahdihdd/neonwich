@@ -39,10 +39,10 @@ import Customers from "./_sections/Customers";
 import Order from "./_sections/Order";
 import AboutUs from "./_sections/AboutUs";
 import WhyUs from "./_sections/WhyUs";
-import MapComponent from "./_components/MapComponent";
-import Slides from "./_components/Swipper";
 import Carousel from "./_sections/Carousel";
 import NeonBoard from "./_sections/NeonBoard";
+import MapComponent from "./_components/MapComponent";
+
 
 export default function Home() {
   return (

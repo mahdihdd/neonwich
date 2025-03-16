@@ -1,24 +1,3 @@
-// import Image from "next/image";
-// import NavbarMenu from "./NavbarMenu";
-
-// export default function Navbar() {
-//   return (
-//     <>
-//     <nav className="fixed flex justify-between items-center font-bold px-5 py-2 ">
-//       <Image
-//         className="drop-shadow-icon"
-//         src="/images/neonwich.png"
-//         alt="لوگو"
-//         width={100}
-//         height={100}
-//       />
-
-//       <NavbarMenu />
-//     </nav>
-//     </> 
-//   );
-// }
-
 import Image from "next/image";
 import NavbarMenu from "./NavbarMenu";
 

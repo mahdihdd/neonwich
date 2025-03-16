@@ -270,7 +270,7 @@ export default function WhyUs() {
               width={120}
               height={100}
               alt={feature.title}
-              className="w-24 h-24 md:w-36 md:h-28 object-cover rounded-lg"
+              className="w-24 h-24 md:w-52 md:h-52 object-cover rounded-lg"
               unoptimized
             />
             <div className="flex flex-col mt-4 md:mt-0 md:mr-6">
