@@ -1,6 +1,5 @@
-
 // ? show the location and scroll down to picture
-// 
+//
 // "use client";
 // import { useState, useRef, useEffect, useMemo } from "react";
 // import dynamic from "next/dynamic";
@@ -243,29 +242,29 @@
 //   { ssr: false }
 // );
 // const Popup = dynamic(() => import("react-leaflet").then((mod) => mod.Popup), {
-  //   ssr: false,
-  // });
-  // const Tooltip = dynamic(
+//   ssr: false,
+// });
+// const Tooltip = dynamic(
 //   () => import("react-leaflet").then((mod) => mod.Tooltip),
 //   { ssr: false }
 // );
 
 // const locations = [
 //   {
-  //     id: 1,
+//     id: 1,
 //     name: "برج میلاد",
 //     lat: 35.744,
 //     lng: 51.375,
 //     image: "/images/milad.jpg",
 //   },
 //   {
-  //     id: 2,
-  //     name: "میدان آزادی",
-  //     lat: 35.7,
-  //     lng: 51.337,
-  //     image: "/images/azadi.jpg",
-  //   },
-  //   {
+//     id: 2,
+//     name: "میدان آزادی",
+//     lat: 35.7,
+//     lng: 51.337,
+//     image: "/images/azadi.jpg",
+//   },
+//   {
 //     id: 3,
 //     name: "پل طبیعت",
 //     lat: 35.757,
@@ -280,8 +279,8 @@
 //   const L = require("leaflet");
 
 //   const imageIcon = useMemo(() => {
-  //     return L.divIcon({
-//       html: `<img src="${location.image}" alt="${location.name}" 
+//     return L.divIcon({
+//       html: `<img src="${location.image}" alt="${location.name}"
 //         style="width:120px; height:100px; border-radius:8px; border:2px solid #4CAF50;" />`,
 //       className: "custom-image-marker",
 //       iconSize: [120, 100],
@@ -297,7 +296,7 @@
 //   const [L, setL] = useState(null);
 
 //   useEffect(() => {
-  //     import("leaflet").then((leaflet) => {
+//     import("leaflet").then((leaflet) => {
 //       setL(leaflet);
 //     });
 //   }, []);
@@ -350,7 +349,7 @@
 //   );
 // }
 
-// ?  more correct code 
+// ?  more correct code
 // "use client";
 // import { useState, useEffect, useMemo } from "react";
 // import dynamic from "next/dynamic";
@@ -408,7 +407,7 @@
 
 //   const imageIcon = useMemo(() => {
 //     return L.divIcon({
-//       html: `<img src="${location.image}" alt="${location.name}" 
+//       html: `<img src="${location.image}" alt="${location.name}"
 //         style="width:300px; height:169px; border-radius:8px; border:2px solid #4CAF50;" unoptimized />`,
 //       className: "custom-image-marker",
 //       iconSize: [100, 80],
@@ -472,18 +471,15 @@
 //   );
 // }
 // !testing:
-
-
 "use client";
 import { useState, useEffect, useMemo } from "react";
 import dynamic from "next/dynamic";
 import { TbHandClick } from "react-icons/tb";
+import { FaLocationDot } from "react-icons/fa6"; // آیکون مکان‌یابی
 import "leaflet/dist/leaflet.css";
 import { useMap } from "react-leaflet";
-import markerIconPng from "leaflet/dist/images/marker-icon.png";
-import markerShadowPng from "leaflet/dist/images/marker-shadow.png";
 
-// بارگذاری داینامیک کامپوننت‌های Leaflet برای جلوگیری از مشکلات SSR
+// بارگذاری داینامیک کامپوننت‌های Leaflet
 const MapContainer = dynamic(
   () => import("react-leaflet").then((mod) => mod.MapContainer),
   { ssr: false }
@@ -500,7 +496,6 @@ const Popup = dynamic(() => import("react-leaflet").then((mod) => mod.Popup), {
   ssr: false,
 });
 
-// لیست مکان‌ها
 const locations = [
   {
     id: 1,
@@ -525,13 +520,12 @@ const locations = [
   },
 ];
 
-// 📌 کامپوننت برای نمایش تصویر همراه با ویژگی alt
+// کامپوننت برای نمایش تصویر همراه با ویژگی alt
 const ImageOverlay = ({ location }) => {
   const map = useMap();
-  const L = typeof window !== "undefined" ? require("leaflet") : null;
+  const L = require("leaflet");
 
   const imageIcon = useMemo(() => {
-    if (!L) return null; // جلوگیری از اجرای `useMemo` قبل از مقداردهی `L`
     return L.divIcon({
       html: `<img src="${location.image}" alt="${location.name}" 
         style="width:300px; height:169px; border-radius:8px; border:2px solid #4CAF50;" unoptimized />`,
@@ -539,35 +533,37 @@ const ImageOverlay = ({ location }) => {
       iconSize: [100, 80],
       iconAnchor: [145, 263],
     });
-  }, [L, location]);
-
-  if (!imageIcon) return null; // اگر مقدار `imageIcon` مقداردهی نشده باشد، چیزی رندر نمی‌شود.
+  }, [location]);
 
   return <Marker position={[location.lat, location.lng]} icon={imageIcon} />;
 };
 
-// 📌 کامپوننت اصلی
 export default function MapComponent() {
   const [selectedLocation, setSelectedLocation] = useState(null);
   const [L, setL] = useState(null);
 
-  // بارگذاری Leaflet فقط در کلاینت
   useEffect(() => {
     import("leaflet").then((leaflet) => {
       setL(leaflet);
     });
   }, []);
 
-  // ساخت آیکون نشانگر برای مارکرها
   const customIcon = useMemo(() => {
     if (!L) return null;
-    return L.icon({
-      iconUrl: markerIconPng,
-      shadowUrl: markerShadowPng,
-      iconSize: [25, 41],
-      iconAnchor: [12, 41],
-      popupAnchor: [1, -34],
-      shadowSize: [41, 41],
+    return L.divIcon({
+      html: `<div style="
+            width: 30px; height: 30px; 
+            display: flex; justify-content: center; align-items: center; 
+            background-color: white; border-radius: 50%; box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+          ">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="green">
+            <path d="M12 2C8.14 2 5 5.14 5 9c0 4.42 5.89 11.23 6.16 11.52a1 1 0 0 0 1.68 0C13.11 20.23 19 13.42 19 9c0-3.86-3.14-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+          </svg>
+        </div>`,
+      className: "custom-marker",
+      iconSize: [40, 40],
+      iconAnchor: [20, 40],
+      popupAnchor: [0, -40],
     });
   }, [L]);
 
