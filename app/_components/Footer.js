@@ -38,6 +38,7 @@ import Image from "next/image";
 import React from "react";
 import Communication from "./Communication";
 import { IoLocationOutline, IoCallOutline } from "react-icons/io5";
+import CallPhoneFooter from "./CallPhoneFooter";
 
 export default function Footer() {
   return (
@@ -48,7 +49,8 @@ export default function Footer() {
 
           <div className="flex flex-row-reverse gap-1 items-center">
             <IoCallOutline className="text-xl" />
-            <p>تماس با ما: 0996 281 2008</p>
+            <p dir="rtl">تماس با ما:</p>
+            <CallPhoneFooter />
           </div>
 
           <div className="flex flex-row-reverse gap-1 items-center">
