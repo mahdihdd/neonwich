@@ -256,7 +256,7 @@ const details = [
 export default function WhyUs() {
   return (
     <RevealUp>
-      <div className="flex flex-col gap-8 p-6 mt-10">
+      <div id="aboutus" className="flex flex-col gap-8 p-6 mt-10">
         <h1 className="text-center text-2xl md:text-3xl font-bold">
           چرا نئون ویچ؟
         </h1>

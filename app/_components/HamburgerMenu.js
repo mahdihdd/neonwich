@@ -56,7 +56,7 @@ export default function HamburgerMenu() {
           <p className="text-center border-green-700 border-b-2 mx-6">
             دسته بندی
           </p>
-          <div className="flex flex-col gap-3 mt-2">
+          <div className="flex flex-col items-end gap-3 mt-2">
             <ScrollIntoSection
               sectionId="neon"
               closeDrawer={closeDrawer}
@@ -78,8 +78,26 @@ export default function HamburgerMenu() {
             >
               نحوه سفارش
             </ScrollIntoSection>
-            <ScrollIntoSection sectionId="sample" closeDrawer={closeDrawer} className="block py-2">
-                نمونه کار
+            <ScrollIntoSection
+              sectionId="sample"
+              closeDrawer={closeDrawer}
+              className="block py-2"
+            >
+              نمونه کار
+            </ScrollIntoSection>
+            <ScrollIntoSection
+              sectionId="aboutus"
+              closeDrawer={closeDrawer}
+              className="block py-2"
+            >
+              درباه ما
+            </ScrollIntoSection>
+            <ScrollIntoSection
+              sectionId="footer"
+              closeDrawer={closeDrawer}
+              className="block py-2"
+            >
+              ارتباط ما
             </ScrollIntoSection>
           </div>
         </div>

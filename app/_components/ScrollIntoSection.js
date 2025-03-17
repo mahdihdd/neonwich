@@ -20,7 +20,7 @@ export default function ScrollIntoSection({ sectionId, children, closeDrawer }) 
 
   return (
     <button
-      className="text-green-800 text-sm md:text-lg hover:text-green-500 px-4 py-2 cursor-pointer transition-all duration-300"
+      className="text-green-800  hover:text-green-500  py-2 cursor-pointer transition-all duration-300"
       onClick={handleClick}
     >
       {children}
