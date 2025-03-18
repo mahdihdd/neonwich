@@ -107,7 +107,7 @@ export default function Customers() {
 
       {/* اسکرول افقی در موبایل */}
       <div className="mt-6 w-full overflow-x-auto scroll-smooth py-4 rounded-lg shadow-md bg-white">
-        <div className="flex h-36 items-center justify-start gap-4 px-6 sm:gap-12 sm:px-16">
+        <div className="flex h-36 items-center justify-start lg:justify-center gap-4 px-6 sm:gap-12 sm:px-16">
           {customerList.map((item, index) => (
             <CustomerItem
               key={item.alt}

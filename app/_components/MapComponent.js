@@ -570,7 +570,7 @@ export default function MapComponent() {
   return (
     <div id="sample" className="flex flex-col items-center py-5 mt-10">
       <div className="flex flex-row-reverse gap-2 justify-center w-full">
-        <p className="mb-5 text-2xl">بر روی علامت های مشخص شده کلیک کنید</p>
+        <p className="mb-5 text-2xl text-right">بر روی علامت های مشخص شده کلیک کنید</p>
         <TbHandClick className="mt-2" />
       </div>
 
