@@ -18,7 +18,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fa">
       <head>
-        <meta name="google-site-verification" content="tXwHXesnGVO_79" />
+        <meta
+          name="google-site-verification"
+          content="tXwHXesnGVO_79gksduyTzTgnnjVXtGnC-FEiO_4G9I"
+        />
       </head>
 
       <body className={`${myFont.className} antialiased bg-[#f4f4f4]`}>
