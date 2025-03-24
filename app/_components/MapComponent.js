@@ -1043,7 +1043,7 @@ export default function MapComponent() {
       {L && (
         <MapContainer
         center={[36.2688, 50.0041]}
-          zoom={15}
+          zoom={12}
           className="w-full h-96 md:w-3/4 rounded-lg shadow-md z-20"
         >
           <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
